@@ -11,8 +11,7 @@ public class Z07Analyzer {
   }
   
   public static void main(String[] args) {
-    String[] strList = 
-    {"tomorrow","toto","to","timbukto","the","hello","heat"};
+    String[] strList = {"tomorrow","toto","to","timbukto","the","hello","heat"};
     String searchStr = "to";
     System.out.println("Searching for: " + searchStr);
     
@@ -21,11 +20,9 @@ public class Z07Analyzer {
     StringAnalyzer startsWith = (t, s) -> t.startsWith(s);
 
     System.out.println("==Contains==");
-    Z07Analyzer.searchArr(strList, searchStr, 
-      contains);
+    Z07Analyzer.searchArr(strList, searchStr, contains);
     
     System.out.println("==Starts With==");
-    Z07Analyzer.searchArr(strList, searchStr, 
-      startsWith);
+    Z07Analyzer.searchArr(strList, searchStr,  startsWith);
   }    
 }
