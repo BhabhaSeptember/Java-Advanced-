@@ -17,6 +17,7 @@ public class RoboCallTest06 {
         List<Person> p1 = Person.createShortList();
         
         System.out.println("\n===== Print List =====");
-        p1.forEach(p -> System.out.println(p));
+        //Collection interface extends Iterable interface which defines the forEach method used below
+        p1.forEach(p -> System.out.println(p)); //Outputs overriden toString()
     }
 }

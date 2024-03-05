@@ -9,29 +9,29 @@ import java.util.function.Predicate;
  */
 public class RoboCall05 {
 
-//    public void phoneContacts(List<Person> pl, Predicate<Person> pred) {
-//        for (Person p : pl) {
-//            if (pred.test(p)) {
-//                roboCall(p);
-//            }
-//        }
-//    }
-//
-//    public void emailContacts(List<Person> pl, Predicate<Person> pred) {
-//        for (Person p : pl) {
-//            if (pred.test(p)) {
-//                roboEmail(p);
-//            }
-//        }
-//    }
-//
-//    public void mailContacts(List<Person> pl, Predicate<Person> pred) {
-//        for (Person p : pl) {
-//            if (pred.test(p)) {
-//                roboMail(p);
-//            }
-//        }
-//    }
+    public void phoneContacts(List<Person> pl, Predicate<Person> pred) {
+        for (Person p : pl) {
+            if (pred.test(p)) {
+                roboCall(p);
+            }
+        }
+    }
+
+    public void emailContacts(List<Person> pl, Predicate<Person> pred) {
+        for (Person p : pl) {
+            if (pred.test(p)) {
+                roboEmail(p);
+            }
+        }
+    }
+
+    public void mailContacts(List<Person> pl, Predicate<Person> pred) {
+        for (Person p : pl) {
+            if (pred.test(p)) {
+                roboMail(p);
+            }
+        }
+    }
 
     public void roboCall(Person p) {
         System.out.println("Calling " + p.getGivenName() + ", " + p.getSurName() + " age " + p.getAge() + " at: " + p.getPhone());

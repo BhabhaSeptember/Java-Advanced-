@@ -15,13 +15,25 @@ public class RoboCallTest07 {
     public static void main(String[] args) {
         
         List<Person> p1 = Person.createShortList();
-        RoboCall05 robo = new RoboCall05();
+        RoboCall07 robo = new RoboCall07();
         
         System.out.println("\n===== Calling all Commercial Pilots Lambda =====");
-        
+        //Selection & output of elements are now handled in one statement
         p1.stream()
                 .filter(p -> p.getAge() >= 23 && p.getAge() <= 65)
                 .forEach(p -> robo.roboCall(p));
+       
+        
+        System.out.println("\n===== Calling all Drivers Lambda =====");
+        p1.stream()
+                .filter(p -> p.getAge() >= 16)
+                .forEach(p -> robo.roboMail(p));
+        
+        
+        System.out.println("\n===== Calling all Draftees Lambda =====");
+        p1.stream()
+                .filter(p -> p.getAge() >=18 && p.getAge()<=25 && p.getGender() == Gender.MALE)
+                .forEach(p -> robo.roboEmail(p));
     }
     
 }

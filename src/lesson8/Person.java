@@ -18,7 +18,7 @@ public class Person {
   private String state;
   private String code;
   
-  public static class Builder{
+  public static class Builder{ //Builder pattern to create new Person objects
     
     private String givenName="";
     private String surName="";
@@ -86,10 +86,14 @@ public class Person {
     }
   }
     
+  
+  
+  //Constructor 1
   private Person(){
     super();
   }
-    
+  
+//Constructor 2  
   private Person(Person.Builder builder){
     givenName = builder.givenName;
     surName = builder.surName;
@@ -104,6 +108,8 @@ public class Person {
         
   }
   
+  
+  //Getter Methods
   public String getGivenName(){
     return givenName;
   }
@@ -164,6 +170,7 @@ public class Person {
     return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "\nGender: " + gender + "\n" + "eMail: " + eMail + "\n";
   } 
 
+  //Creating ArrayList of Person objects
   public static List<Person> createShortList(){
     List<Person> people = new ArrayList<>();
     
