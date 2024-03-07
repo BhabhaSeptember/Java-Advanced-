@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.example;
+package lesson12;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
